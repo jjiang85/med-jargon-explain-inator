@@ -1,0 +1,2 @@
+# Controller
+This is the weird one and probably the most difficult for non-software people to wrap their heads around at first. The controller provides an abstraction between the model and the view. This is also where the actual REST API lives. We likely won't be changing this much once it's set up.
