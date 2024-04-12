@@ -3,11 +3,10 @@
 BEHOLD! THE MED-JARGON-EXPLAIN-INATOR! With this I will get rid of all pedantic and overly indulgent usage of jargon in the TRI-STATE AREA, thereby increasing MEDICAL LITERACY for all!!
 
 ## Setup
-TBD, but you'll need at least Python 3.6. Python packages needed are listed here:
+TBD, but you'll need at least Python 3.6. Install by using `pip <package name>`. Python packages needed are listed here:
 - `nltk`
 - `fastapi`
 - `"uvicorn[standard]"`
-Install by using `pip <package name>`
 
 ## Structure
 The explain-inator is built using a traditional [Model-View-Controller](https://www.geeksforgeeks.org/mvc-framework-introduction/) framework. See the READMEs inside each folder to see more details about how this all works together.
