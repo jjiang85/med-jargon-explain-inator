@@ -1,6 +1,6 @@
 # med-jargon-explain-inator
 
-BEHOLD! THE MED-JARGON-EXPLAIN-INATOR! With this I will get rid of all pedantic and overly indulgent usage of jargon in the TRI-STATE AREA, thereby increasing MEDICAL LITERACY for all!!
+BEHOLD! THE MED-JARGON-EXPLAIN-INATOR! With this I will get rid of all pedantic and overly indulgent usage of jargon in the TRI-STATE AREA, thereby increasing MEDICAL LITERACY for all!! 🎉
 
 ## Setup
 TBD, but you'll need at least Python 3.6. Install by using `pip <package name>`. Python packages needed are listed here:
