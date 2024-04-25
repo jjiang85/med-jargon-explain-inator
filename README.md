@@ -6,6 +6,7 @@ BEHOLD! THE MED-JARGON-EXPLAIN-INATOR! With this I will get rid of all pedantic 
 4/25
 - Low-fidelity design for UX using figma and/or swagger.
 - Create a UX design questionnaire based on the design.
+
 5/2
 - Fill out the questionnaire x 3 times with user hat on.
 - Create a 1-page report to summarize the results and make recommendations for a more inclusive UX design.
