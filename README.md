@@ -2,7 +2,7 @@
 
 BEHOLD! THE MED-JARGON-EXPLAIN-INATOR! With this I will get rid of all pedantic and overly indulgent usage of jargon in the TRI-STATE AREA, thereby increasing MEDICAL LITERACY for all!! 🎉
 
-## Schedule
+## 📆 Schedule 📆
 4/25
 - Low-fidelity design for UX using figma and/or swagger.
 - Create a UX design questionnaire based on the design.
