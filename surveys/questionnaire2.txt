@@ -1,0 +1,72 @@
+After showing the participant one or more visuals, we may ask these questions.
+
+Appearance
+    How is the font size?
+      + Too big
+      + Too small
+      + It looks good to me
+  
+    Should we highlight or change the color of jargon terms?
+      + Yes
+      + No
+  
+    What colors/themes are more distracting for individuals? (open-ended)
+  
+    How chaotic/cluttered is the design?
+      + It is a little cluttered. Reduce clutter slightly.
+      + I am overwhelmed. It is very chaotic. 
+      + It looks good to me. 
+  
+    Should all the term summaries be presented in-text or on the side?
+      + Yes
+      + No
+  
+    Which is better for reducing clutter?
+      + In-text
+      + On the side
+
+Features
+    Would you utilize a text-to-speech feature to aid with pronunciation?
+      + Yes
+      + No
+  
+    Do you want a personalized dictionary storing words that you have interacted with?
+      + Yes
+      + No
+  
+    Should we offer light/dark modes?
+      + Yes
+      + No
+  
+    Are there too many features/capabilities? 
+      + Yes
+      + No
+      + Other (Explanation Box)
+
+Methods
+    Would you like to know where the definition data originated?
+      + Yes
+      + No
+
+    Would you like links to external sites for more information? 
+      + Yes
+      + No
+
+
+Information
+    Is the definition information overwhelming or confusing?
+      + Overwhelming. The definitions are long.
+      + Confusing. I don’t understand the definition
+      + It is NOT overwhelming or confusing
+      + Other (Explanation box)
+
+    Are there too many unknown terms in the definitions?
+      + Yes
+      + No
+
+    How should we display information?
+      + Pop-ups on the side
+      + Pop-ups when mouse hovers over a word
+      + New tabs
+      + Other (Explanation box)
+
