@@ -1,0 +1,41 @@
+General Usage
+    How often do you encounter complex medical terms?
+    How comfortable are you with understanding complex medical terminology?
+    Would having additional information enhance your understanding of complex medical terms?
+    Would having tooltips to explain medical terms enhance your understanding of complex medical terms?
+    
+Display Options
+    Tooltips
+        How likely are you to use a tool that provides tooltips for complex medical terms?
+
+    Pop-up Window
+        How likely are you to use a tool that provides a separate pop-up window for complex medical terms?
+
+    Another option?
+        How likely are you to use a tool that provides a XXXX for complex medical terms?
+
+Questions about the different displays
+Replace XXXX with the chosen tool
+
+Interaction
+    Did you notice the XXXX while reading the complex medical terms?
+    Were the XXXX easy to understand?
+    Did the XXXX provide useful information about the medical terms?
+    Did the XXXX disrupt your reading experience in any way?
+    
+Design and Placement
+    Were the XXXX easy to find?
+    Did the XXXX appear at the right time and in the right place?
+    Were the XXXX visually appealing and easy to read?
+
+Customization
+    Would you like the option to customize the XXXX (e.g., font size, color)?
+    Would you prefer XXXX to appear automatically, or would you like to trigger them manually?
+
+Suggestions for Improvement
+    How could the XXXX be improved to better assist your understanding of complex medical terms?
+    Are there any additional features you would like to see in a tool like this?
+
+Overall Experience
+    On a scale of 1 to 10, how would you rate your overall experience using the XXXX for complex medical terms?
+    Would you recommend this tool to others who read complex medical terms?
