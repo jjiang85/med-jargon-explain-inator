@@ -2,10 +2,12 @@ import torch
 import pandas as pd
 import nltk
 
+from datasets import load_metric
+from datasets import Dataset
+from sklearn.model_selection import train_test_split
 from transformers import EncoderDecoderModel
 from transformers import BertTokenizer
 from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
-from datasets import load_metric
 
 
 class DefinitionSimplifier:
@@ -41,14 +43,56 @@ class DefinitionSimplifier:
     def load_Wiki_data(self):
 
         normal_df = pd.read_csv(self.trainpath, sep='\t', names=['topic', 'score', 'sentence'])
-        simple_df = pd.read_csv(self.testpath, sep='\t', names=['topic', 'score', 'sentence'])
+        simple_df = pd.read_csv(self.testpath, sep='\t', names=['simple_topic', 'simple_score', 'simple_sentence'])
 
-        self.train_ds = normal_df['sentence']
-        self.test_ds = simple_df['sentence']
+        train_ds = normal_df['sentence']
+        test_ds = simple_df['simple_sentence']
+
+        dataset_df = pd.concat([train_ds, test_ds], axis=1)
+        train_df, test_df = train_test_split(dataset_df, train_size=0.9, random_state=20)
+
+
+        # Create Dataset objects for training and test sets
+        train_dataset = Dataset.from_pandas(train_df)
+        test_dataset = Dataset.from_pandas(test_df)
+
+        self.train_dataset = train_dataset
+        self.test_dataset = test_dataset
+
 
 
 
     def train_model(self):
+
+        # def tokenize_func(examples):
+        #     return self.tokenizer(examples["sentence"], examples["simple_sentence"], truncation=True, padding = True)
+        
+        # def tokenize_func(examples):
+        #     tokenized = self.tokenizer(examples["sentence"], examples["simple_sentence"], truncation=True, padding=True)
+        #     for i, example in enumerate(examples):
+        #         len_src = len(tokenized['input_ids'][i])
+        #         len_tgt = len(tokenized['decoder_input_ids'][i])
+        #         # Adjust these thresholds according to your requirements
+        #         if len_src > 512 or len_tgt > 512:
+        #             print("Example with potentially overflowing tokens:", example)
+        #     return tokenized
+
+        def tokenize_func(examples):
+            return self.tokenizer(
+                examples["sentence"],
+                examples["simple_sentence"],
+                padding="max_length",
+                truncation="only_second",  # Ensure that only the second sequence is truncated
+                max_length=512,  # Set the maximum input length
+                return_tensors="pt",  # Return PyTorch tensors
+                add_special_tokens=True,  # Add special tokens for the model
+                return_attention_mask=True,  # Generate attention masks
+                return_special_tokens_mask=True,
+                return_token_type_ids=False,  # We're not using token type IDs for this task
+                )
+        
+        encoded_dataset_train = self.train_dataset.map(tokenize_func, batched=True)
+        encoded_dataset_test = self.test_dataset.map(tokenize_func, batched=True)
 
         # Initialize and save training arguments for the model
         training_arguments = Seq2SeqTrainingArguments(
@@ -63,7 +107,8 @@ class DefinitionSimplifier:
                             eval_steps=10000,
                             warmup_steps=2000,
                             gradient_accumulation_steps=1,
-                            save_total_limit=3)
+                            save_total_limit=3,
+                            remove_unused_columns= False)
         self.training_args = training_arguments
         
 
@@ -94,8 +139,12 @@ class DefinitionSimplifier:
                     tokenizer=self.tokenizer,
                     args=training_arguments,
                     compute_metrics=compute_metrics,
-                    train_dataset=self.train_ds,
-                    eval_dataset=self.test_ds)
+                    train_dataset=encoded_dataset_train,
+                    eval_dataset=encoded_dataset_test)
+                    # train_dataset=self.train_dataset,
+                    # eval_dataset=self.test_dataset)
+                    # train_dataset=self.train_ds,
+                    # eval_dataset=self.test_ds)
 
         # Train the text simplification model
         trainer.train()
@@ -104,8 +153,8 @@ class DefinitionSimplifier:
 
     def evaluate_model(self, sentence):
 
-        trained_model = EncoderDecoderModel.from_pretrained('./saved_model')
-        tokenizer = BertTokenizer.from_pretrained('./saved_model')
+        trained_model = EncoderDecoderModel.from_pretrained('../trained_models/saved_model')
+        tokenizer = BertTokenizer.from_pretrained('../trained_models/saved_model')
 
         inputs = tokenizer([sentence], padding='max_length',
                             max_length=60, truncation=True, return_tensors='pt')
