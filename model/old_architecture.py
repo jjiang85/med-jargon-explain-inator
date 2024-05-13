@@ -2,7 +2,7 @@ import torch
 import pandas as pd
 import nltk
 
-from datasets import load_metric
+from datasets import load_metric, load_dataset, concatenate_datasets, DatasetDict
 from datasets import Dataset
 from sklearn.model_selection import train_test_split
 from transformers import EncoderDecoderModel
@@ -14,8 +14,9 @@ class DefinitionSimplifier:
 
     def __init__(self):
         
-        self.trainpath = '../data/def_simplifier_training/normal.aligned'
-        self.testpath = '../data/def_simplifier_training/simple.aligned'
+        self.inputpath = '../data/def_simplifier_training/normal.aligned'
+        self.outputpath = '../data/def_simplifier_training/simple.aligned'
+        self.datapath = '../data/def_simplifier_training/aligned_data.csv'
 
     
     def load_BERT_model(self):
@@ -37,62 +38,48 @@ class DefinitionSimplifier:
 
         # Save the model and tokenizer
         self.model = model
-        self.tokenizer = tokenizer
+        self.tokenizer = tokenizer 
 
 
     def load_Wiki_data(self):
+        dataset = load_dataset('csv', data_files=self.datapath, delimiter=',')
+        dataset = dataset["train"].train_test_split(test_size=0.2)
+        # print(dataset)
 
-        normal_df = pd.read_csv(self.trainpath, sep='\t', names=['topic', 'score', 'sentence'])
-        simple_df = pd.read_csv(self.testpath, sep='\t', names=['simple_topic', 'simple_score', 'simple_sentence'])
+        train_ds = dataset['train'].shuffle(seed=42)
+        eval_ds = dataset['test']
 
-        train_ds = normal_df['sentence']
-        test_ds = simple_df['simple_sentence']
+    
+        # input_train = train_ds['sentence']
+        # output_train = train_ds['simple_sentence']
+        # train_df = DatasetDict({'input_ids': input_train, 'labels': output_train})
+        # self.train_df = train_df
 
-        dataset_df = pd.concat([train_ds, test_ds], axis=1)
-        train_df, test_df = train_test_split(dataset_df, train_size=0.9, random_state=20)
+        # input_eval = eval_ds['sentence']
+        # output_eval = eval_ds['simple_sentence']
+        # eval_df = DatasetDict({'input_ids': input_eval, 'labels': output_eval})
+        # self.eval_df = eval_df
 
+        # print(train_ds)
+        input_train = self.tokenizer.batch_encode_plus(train_ds['sentence'], padding=True, truncation=True, return_tensors='pt')
+        output_train = self.tokenizer.batch_encode_plus(train_ds['simple_sentence'], padding=True, truncation=True, return_tensors='pt')
+        train_df = DatasetDict({'input_ids': input_train, 'labels': output_train})
+        self.train_df = train_df
+        print(train_df)
 
-        # Create Dataset objects for training and test sets
-        train_dataset = Dataset.from_pandas(train_df)
-        test_dataset = Dataset.from_pandas(test_df)
+        input_eval = self.tokenizer.batch_encode_plus(eval_ds['sentence'], padding=True, truncation=True, return_tensors='pt')
+        output_eval = self.tokenizer.batch_encode_plus(eval_ds['simple_sentence'], padding=True, truncation=True, return_tensors='pt')
+        eval_df = DatasetDict({'input_ids': input_eval, 'labels': output_eval})
+        self.eval_df = eval_df
 
-        self.train_dataset = train_dataset
-        self.test_dataset = test_dataset
-
+        self.dataset = {'train': train_df, 'eval': eval_df}
+        # DatasetDict({'train': train_df,
+        #                             'eval': eval_df})
+        # print(self.dataset)
 
 
 
     def train_model(self):
-
-        # def tokenize_func(examples):
-        #     return self.tokenizer(examples["sentence"], examples["simple_sentence"], truncation=True, padding = True)
-        
-        # def tokenize_func(examples):
-        #     tokenized = self.tokenizer(examples["sentence"], examples["simple_sentence"], truncation=True, padding=True)
-        #     for i, example in enumerate(examples):
-        #         len_src = len(tokenized['input_ids'][i])
-        #         len_tgt = len(tokenized['decoder_input_ids'][i])
-        #         # Adjust these thresholds according to your requirements
-        #         if len_src > 512 or len_tgt > 512:
-        #             print("Example with potentially overflowing tokens:", example)
-        #     return tokenized
-
-        def tokenize_func(examples):
-            return self.tokenizer(
-                examples["sentence"],
-                examples["simple_sentence"],
-                padding="max_length",
-                truncation="only_second",  # Ensure that only the second sequence is truncated
-                max_length=512,  # Set the maximum input length
-                return_tensors="pt",  # Return PyTorch tensors
-                add_special_tokens=True,  # Add special tokens for the model
-                return_attention_mask=True,  # Generate attention masks
-                return_special_tokens_mask=True,
-                return_token_type_ids=False,  # We're not using token type IDs for this task
-                )
-        
-        encoded_dataset_train = self.train_dataset.map(tokenize_func, batched=True)
-        encoded_dataset_test = self.test_dataset.map(tokenize_func, batched=True)
 
         # Initialize and save training arguments for the model
         training_arguments = Seq2SeqTrainingArguments(
@@ -133,18 +120,23 @@ class DefinitionSimplifier:
                     'rouge2_recall': round(rouge_output.recall, 4),
                     'rouge2_f_measure': round(rouge_output.fmeasure, 4)}
 
+    
         # Define the Seq2Seq Trainer
         trainer = Seq2SeqTrainer(
                     model=self.model,
                     tokenizer=self.tokenizer,
                     args=training_arguments,
                     compute_metrics=compute_metrics,
-                    train_dataset=encoded_dataset_train,
-                    eval_dataset=encoded_dataset_test)
+                    train_dataset=self.dataset['train']['input_ids'],
+                    eval_dataset=self.dataset['eval']['input_ids'])
+                    # train_dataset=self.train_df['input_ids'],
+                    # eval_dataset=self.eval_df['input_ids'])
+                    # train_dataset=self.dataset['train']['input'],
+                    # eval_dataset=self.dataset['eval']['input'])
+                    # train_dataset=self.train,
+                    # eval_dataset=self.eval)
                     # train_dataset=self.train_dataset,
-                    # eval_dataset=self.test_dataset)
-                    # train_dataset=self.train_ds,
-                    # eval_dataset=self.test_ds)
+                    # eval_dataset=self.eval_dataset)
 
         # Train the text simplification model
         trainer.train()
@@ -183,8 +175,8 @@ if __name__ == '__main__':
     simplifier = DefinitionSimplifier()
 
     # Load the model and training data
-    simplifier.load_Wiki_data()
     simplifier.load_BERT_model()
+    simplifier.load_Wiki_data()
 
     # Train the model and tune using Wiki Data
     simplifier.train_model()
