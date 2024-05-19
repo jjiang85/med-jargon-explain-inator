@@ -36,7 +36,6 @@ class ReadingDifficultyCalculator:
         sentences = len(nltk.sent_tokenize(self.text))
 
         # count the number of syllables
-        # TODO: can this be faster?
         syllables = 0
         for word in self.text.split():
             syllables += len(nltk.SyllableTokenizer().tokenize(word))
