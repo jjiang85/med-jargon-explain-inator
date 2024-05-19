@@ -22,10 +22,10 @@ class ReadingDifficultyCalculator:
 
     def calculate_reading_difficulty(self) -> float:
         """
-        Calculate the reading difficulty of the given text using the Flesch-Kincaid formula.
-        Uses reading ease instead of grade_level
+        Calculate the grade level reading difficulty of the given text using the Flesch-Kincaid formula.
+
         Returns:
-            reading_ease (float): reading difficulty score represented as the Flesch-Kincaid reading ease
+            reading_ease (float): reading difficulty score represented as the Flesch-Kincaid grade level
             rounded to two decimal points
         """
 
@@ -42,6 +42,6 @@ class ReadingDifficultyCalculator:
             syllables += len(nltk.SyllableTokenizer().tokenize(word))
 
         reading_ease = 206.835 - 1.015 * (words / sentences) - 84.6 * (syllables / words)
-        return round(reading_ease, 2)
+        grade_level = 0.39 * (words / sentences) + 11.8 * (syllables / words) - 15.59
+        return round(grade_level, 2)
     
-# Example usage
