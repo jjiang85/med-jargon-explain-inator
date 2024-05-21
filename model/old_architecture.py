@@ -1,188 +1,199 @@
 import torch
+from transformers import BertTokenizer, BertForSequenceClassification
+from transformers import BartForConditionalGeneration, BartTokenizer
+from transformers import T5Tokenizer, T5ForConditionalGeneration
+from torch.utils.data import Dataset, DataLoader
+from transformers import AdamW
+from tqdm import tqdm
 import pandas as pd
-import nltk
 
-from datasets import load_metric, load_dataset, concatenate_datasets, DatasetDict
-from datasets import Dataset
-from sklearn.model_selection import train_test_split
-from transformers import EncoderDecoderModel
-from transformers import BertTokenizer
-from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
+class MedicalDataset(Dataset):
 
+    def __init__(self, sentences, simplified_sentences, max_length, tokenizer):
+        self.sentences = sentences
+        self.simplified_sentences = simplified_sentences
+        self.max_length = max_length
+        self.tokenizer = tokenizer
 
-class DefinitionSimplifier:
-
-    def __init__(self):
-        
-        self.inputpath = '../data/def_simplifier_training/normal.aligned'
-        self.outputpath = '../data/def_simplifier_training/simple.aligned'
-        self.datapath = '../data/def_simplifier_training/aligned_data.csv'
-
+    def __len__(self):
+        return len(self.sentences)
     
-    def load_BERT_model(self):
+    def __getitem__(self, index):
+        sentence = self.sentences[index]
+        simplified_sentence = self.simplified_sentences[index]
 
-        # Initialize a pretrained model and tokenizer, loade from transformers
-        model = EncoderDecoderModel.from_encoder_decoder_pretrained('bert-base-uncased', 'bert-base-uncased')
-        tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+        encoding = self.tokenizer.encode_plus(
+                                sentence,
+                                simplified_sentence,
+                                add_special_tokens=True,
+                                max_length=self.max_length,
+                                padding='max_length',
+                                return_tensors='pt',
+                                truncation=True)
 
-        # Configure model embeddings using the tokenizer
-        model.config.decoder_start_token_id = tokenizer.cls_token_id
-        model.config.eos_token_id = tokenizer.sep_token_id
-        model.config.pad_token_id = tokenizer.pad_token_id
-        model.config.vocab_size = model.config.encoder.vocab_size
-        model.config.max_length = 120
-        model.config.min_length = 40
-        model.config.early_stopping = True
-        model.config.length_penalty = 0.8
-        model.config.num_beams = 3
+        return {
+            'input_ids': encoding['input_ids'].flatten(),
+            'attention_mask': encoding['attention_mask'].flatten(),
+            'labels': torch.tensor(1)  # Dummy label, since this is for simplification not classification
+                }
 
-        # Save the model and tokenizer
-        self.model = model
-        self.tokenizer = tokenizer 
+def load_dataset(filepath):
+    """
+    Loads a .csv file into a pandas dataframe, then converts the information from each column
+    into a list for ease of access later in the model
 
+    args:
+        filepath (str): indicates the relative file path and location to access the dataset
 
-    def load_Wiki_data(self):
-        dataset = load_dataset('csv', data_files=self.datapath, delimiter=',')
-        dataset = dataset["train"].train_test_split(test_size=0.2)
-        # print(dataset)
-
-        train_ds = dataset['train'].shuffle(seed=42)
-        eval_ds = dataset['test']
-
+    returns:
+        sentences (list): sentence strings from the wikipedia aligned dataset
+        simplified_sentences (list): corresponding simplified sentence strings from the wikipedia aligned dataset
+    """
     
-        # input_train = train_ds['sentence']
-        # output_train = train_ds['simple_sentence']
-        # train_df = DatasetDict({'input_ids': input_train, 'labels': output_train})
-        # self.train_df = train_df
+    df = pd.read_csv(filepath)
+    sentences = df['sentence'].to_list()
+    simplified_sentences = df['simple_sentence'].to_list()
 
-        # input_eval = eval_ds['sentence']
-        # output_eval = eval_ds['simple_sentence']
-        # eval_df = DatasetDict({'input_ids': input_eval, 'labels': output_eval})
-        # self.eval_df = eval_df
+    return sentences, simplified_sentences
 
-        # print(train_ds)
-        input_train = self.tokenizer.batch_encode_plus(train_ds['sentence'], padding=True, truncation=True, return_tensors='pt')
-        output_train = self.tokenizer.batch_encode_plus(train_ds['simple_sentence'], padding=True, truncation=True, return_tensors='pt')
-        train_df = DatasetDict({'input_ids': input_train, 'labels': output_train})
-        self.train_df = train_df
-        print(train_df)
+# def simplify_sentence(sentence, model, tokenizer, max_length=128, beam_search=False, beam_size=3):
+#     """
+#     encodes a given sentence, runs it through the simplification model, then decodes it to return a simplified sentence
 
-        input_eval = self.tokenizer.batch_encode_plus(eval_ds['sentence'], padding=True, truncation=True, return_tensors='pt')
-        output_eval = self.tokenizer.batch_encode_plus(eval_ds['simple_sentence'], padding=True, truncation=True, return_tensors='pt')
-        eval_df = DatasetDict({'input_ids': input_eval, 'labels': output_eval})
-        self.eval_df = eval_df
+#     args:
+#         sentence (str): The sentence to be simplified.
+#         model: The pre-trained simplification model.
+#         tokenizer: The tokenizer used for encoding the input sentence.
+#         max_length (int): The maximum length of the input sequence after tokenization, defaults to 128.
+#         beam_search (bool): Whether to use beam search decoding, defaults to False.
+#         beam_size (int): The beam size for beam search decoding, applicable only if beam_search is True, defaults to 3.
 
-        self.dataset = {'train': train_df, 'eval': eval_df}
-        # DatasetDict({'train': train_df,
-        #                             'eval': eval_df})
-        # print(self.dataset)
+#     returns:
+#         simplified_sentence (str): The simplified version of the input sentence provided
+#     """
+#     inputs = tokenizer.encode_plus(sentence, return_tensors='pt', max_length=max_length, padding='max_length', truncation=True)
+#     input_ids = inputs['input_ids']
+#     attention_mask = inputs['attention_mask']
 
-
-
-    def train_model(self):
-
-        # Initialize and save training arguments for the model
-        training_arguments = Seq2SeqTrainingArguments(
-                            predict_with_generate=True,
-                            evaluation_strategy='steps',
-                            per_device_train_batch_size=8,
-                            per_device_eval_batch_size=8,
-                            fp16=torch.cuda.is_available(),
-                            output_dir='./out',
-                            logging_steps=100,
-                            save_steps=3000,
-                            eval_steps=10000,
-                            warmup_steps=2000,
-                            gradient_accumulation_steps=1,
-                            save_total_limit=3,
-                            remove_unused_columns= False)
-        self.training_args = training_arguments
-        
-
-        meteor = load_metric('meteor')
-        rouge = load_metric('rouge')
-
-        # Define the compute metrics function required for Seq2Seq Training
-        def compute_metrics(prediction):
-            labels_ids = prediction.label_ids
-            pred_ids = prediction.predictions
-
-            pred_str = self.tokenizer.batch_decode(pred_ids, skip_special_tokens=True)
-            labels_ids[labels_ids == -100] = self.tokenizer.pad_token_id
-            label_str = self.tokenizer.batch_decode(labels_ids, skip_special_tokens=True)
-
-            meteor_output = meteor.compute(predictions=pred_str, references=label_str)
-            rouge_output = rouge.compute(
-                predictions=pred_str, references=label_str, rouge_types=['rouge2'])['rouge2'].mid
-
-            return {'meteor_score': round(meteor_output['meteor'], 4),
-                    'rouge2_precision': round(rouge_output.precision, 4),
-                    'rouge2_recall': round(rouge_output.recall, 4),
-                    'rouge2_f_measure': round(rouge_output.fmeasure, 4)}
-
+#     with torch.no_grad():
+#         outputs = model.generate(input_ids=input_ids, 
+#                                 attention_mask=attention_mask, 
+#                                 max_length=max_length, 
+#                                 num_beams=beam_size if beam_search else 1, 
+#                                 early_stopping=True)
     
-        # Define the Seq2Seq Trainer
-        trainer = Seq2SeqTrainer(
-                    model=self.model,
-                    tokenizer=self.tokenizer,
-                    args=training_arguments,
-                    compute_metrics=compute_metrics,
-                    train_dataset=self.dataset['train']['input_ids'],
-                    eval_dataset=self.dataset['eval']['input_ids'])
-                    # train_dataset=self.train_df['input_ids'],
-                    # eval_dataset=self.eval_df['input_ids'])
-                    # train_dataset=self.dataset['train']['input'],
-                    # eval_dataset=self.dataset['eval']['input'])
-                    # train_dataset=self.train,
-                    # eval_dataset=self.eval)
-                    # train_dataset=self.train_dataset,
-                    # eval_dataset=self.eval_dataset)
+#     simplified_sentence = tokenizer.decode(outputs[0], skip_special_tokens=True)
+#     return simplified_sentence
 
-        # Train the text simplification model
-        trainer.train()
-        trainer.save_model('../trained_models/saved_model')
+# BART
+# def simplify_sentence(sentence, model, tokenizer):
+#     inputs = tokenizer.encode("simplify: " + sentence, return_tensors="pt", max_length=1024, truncation=True)
+#     outputs = model.generate(inputs, max_length=1024, num_beams=4, early_stopping=True)
+#     simplified_sentence = tokenizer.decode(outputs[0], skip_special_tokens=True)
+#     return simplified_sentence
 
-
-    def evaluate_model(self, sentence):
-
-        trained_model = EncoderDecoderModel.from_pretrained('../trained_models/saved_model')
-        tokenizer = BertTokenizer.from_pretrained('../trained_models/saved_model')
-
-        inputs = tokenizer([sentence], padding='max_length',
-                            max_length=60, truncation=True, return_tensors='pt')
-
-        trained_model.config.decoder_start_token_id = tokenizer.cls_token_id
-        trained_model.config.eos_token_id = tokenizer.sep_token_id
-        trained_model.config.pad_token_id = tokenizer.pad_token_id
-        trained_model.config.vocab_size = self.model.config.encoder.vocab_size
-
-        output = trained_model.generate(inputs['input_ids'],
-                                max_length=60,
-                                min_length=30,
-                                num_beams=4,
-                                length_penalty=0.8,
-                                temperature=1.0,
-                                early_stopping=True,
-                                top_k=50,
-                                do_sample=False)
-
-        text = tokenizer.batch_decode(output, skip_special_tokens=True)
-        print(text)
+# T5
+def simplify_sentence(sentence, model, tokenizer):
+    # Prepend the task prefix for T5
+    input_text = "simplify: " + sentence
+    inputs = tokenizer.encode(input_text, return_tensors="pt", max_length=512, truncation=True)
+    outputs = model.generate(inputs, max_length=512, num_beams=4, early_stopping=True)
+    simplified_sentence = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    return simplified_sentence
 
 
 if __name__ == '__main__':
-    # Initialize the class
-    simplifier = DefinitionSimplifier()
+    train = False
+    if train == True:
+        filepath = 'data/def_simplifier_training/aligned_data.csv'
 
-    # Load the model and training data
-    simplifier.load_BERT_model()
-    simplifier.load_Wiki_data()
+        sentences, simplified_sentences = load_dataset(filepath)
 
-    # Train the model and tune using Wiki Data
-    simplifier.train_model()
+        # Find the longest sentence to ensure proper padding length
+        long_sent = max(sentences, key=lambda x: len(x))
+        long_simp_sent = max(simplified_sentences, key=lambda x: len(x))
+        max_length = max(long_sent, long_simp_sent)
 
-    # Create sentence to be simplified
-    sentence = "A neurotransmitter (a chemical messenger that sends signals between brain cells) that plays roles in attention, learning, and memory."
-    # Test the model
-    simplifier.evaluate_model(sentence)
+        # Load pre-trained BERT model and tokenizer
+        model_name = 'bert-base-uncased'
+        tokenizer = BertTokenizer.from_pretrained(model_name)
+        model = BertForSequenceClassification.from_pretrained(model_name)
+
+        # Define parameters
+        batch_size = 8
+        max_length = 128
+        learning_rate = 2e-5
+        epochs = 2
+
+        # Prepare the dataset and data loader for the model
+        train_ds = MedicalDataset(sentences, simplified_sentences, max_length, tokenizer)
+        train_dataloader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
+
+        # Define optimizer and loss function
+        optimizer = AdamW(model.parameters(), lr=learning_rate)
+        criterion = torch.nn.CrossEntropyLoss()
+
+        # Train the model
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        model.to(device)
+        model.train()
+
+        for epoch in range(epochs):
+            epoch_loss = 0
+            for batch in tqdm(train_dataloader, desc=f'Epoch {epoch + 1}/{epochs}', unit='batch'):
+                input_ids = batch['input_ids'].to(device)
+                attention_mask = batch['attention_mask'].to(device)
+                labels = batch['labels'].to(device)
+
+                outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+                loss = outputs.loss
+
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+
+                epoch_loss += loss.item()
+
+            print(f'Epoch {epoch + 1}/{epochs}, Loss: {epoch_loss / len(train_dataloader)}')
+
+        # Save the fine-tuned model and tokenizer
+        output_dir = "fine_tuned_medical_bert"
+        model.save_pretrained(output_dir)
+        tokenizer.save_pretrained(output_dir)
+    
+    else:
+        # BERT
+        # model_name = "./fine_tuned_medical_bert"
+        # model = BertForSequenceClassification.from_pretrained(model_name)
+        # tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+        # BART
+        # model_name = "facebook/bart-large-cnn"
+        # model = BartForConditionalGeneration.from_pretrained(model_name)
+        # tokenizer = BartTokenizer.from_pretrained(model_name)
+
+        #T5
+        model_name = "t5-base" 
+        model = T5ForConditionalGeneration.from_pretrained(model_name)
+        tokenizer = T5Tokenizer.from_pretrained(model_name)
+        
+        # Example usage of simplifying sentences
+        definitions = {"adhesion": "A band of scar tissue that joins normally separated internal body structures, most often after surgery, inflammation, or injury in the area.",
+                        "arthroscopy": "A minimally invasive diagnostic and treatment procedure used for conditions of a joint. This procedure uses a small, lighted, optic tube (arthroscope) which is inserted into the joint through a small incision in the joint. Images of the inside of the joint are projected onto a screen; used to evaluate any degenerative and/or arthritic changes in the joint; to detect bone diseases and tumors; to determine the cause of bone pain and inflammation.",
+                        "carpal tunnel": "Passageway in the wrist through which nerves and the flexor muscles of the hands pass.",
+                        "CT scan": "Computed Tomography (CT) is a non-invasive, diagnostic procedure that uses a series of x-rays to show a cross-sectional view of the inside of the body.",
+                        "fusion": "Correction of an unstable part of the spine by joining two or more vertebrae. Usually done surgically, but sometimes done by traction or immobilization.",
+                        "gastroenterostomy": "Surgical creation of an opening between the stomach wall and the small intestines; performed when the normal opening has been eliminated.",
+                        "meniscus": "Crescent-shaped cartilage between the upper end of the tibia (shin bone) and the femur (thigh bone).",
+                        "pelvic floor": "Muscles and connective tissue providing support for pelvic organs; e.g. bladder, lower intestines, uterus (in females); also aids in continence as part of the urinary and anal sphincters.",
+                        "pleurisy": "Inflammation of the pleura that is characterized by sudden onset, painful and difficult respiration and exudation of fluid or fibrinous material into the pleural cavity." 
+                    }
+        
+        with open('T5output.txt', "w") as f:
+            for key, value in definitions.items():
+                simp_sent = simplify_sentence(value, model, tokenizer)
+                f.write(key + "\n")
+                f.write("Original sentence:" + '\n' + str(value) + '\n')
+                f.write("Simplified sentence:" + '\n' + str(simp_sent) + '\n\n')
+
 
