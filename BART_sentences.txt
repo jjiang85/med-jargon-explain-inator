@@ -1,0 +1,294 @@
+0
+Original sentence:
+It is the county seat of Alfalfa County .
+Simplified sentence:
+It is the county seat of Alfalfa County. It is located in the north of the county. The county is made up of four counties: A, B, C, D and E. It has a population of around 1,000,000 people. It was founded in 17th century.
+
+1
+Original sentence:
+Cherokee is a city in Alfalfa County , Oklahoma , United States .
+Simplified sentence:
+Cherokee is a city in Alfalfa County, Oklahoma, in the U.S. state of Alfalfa. Cherokee is a part of the Cherokee Indian tribe, which has a long history in the area. Cherokee has a population of about 2,000.
+
+2
+Original sentence:
+Skateboard decks are usually between 28 and 33 inches long .
+Simplified sentence:
+Skateboard decks are usually between 28 and 33 inches long. Skateboard boards can be up to 33 inches in length. They can also be as small as 10 inches in diameter. Skates are usually made of plastic or rubber. They are usually painted on a black surface.
+
+3
+Original sentence:
+The underside of the deck can be printed with a design by the manufacturer , blank , or decorated by any other means .
+Simplified sentence:
+The underside of the deck can be printed with a design by the manufacturer, blank, or decorated by any other means. The underside can also be printed as a blank or as a custom design. The design can be any shape or size, and can be either black or white or black and white.
+
+4
+Original sentence:
+This was created by two surfers ; Ben Whatson and Jonny Drapper .
+Simplified sentence:
+simplify: This was created by two surfers ; Ben Whatson and Jonny Drapper. It was created to celebrate the 50th anniversary of the World Surfing Championships. The event was held in San Francisco in 2007. It is the largest Surfing competition in the world.
+
+5
+Original sentence:
+Some of them have special materials that help to keep the deck from breaking : such as fiberglass , bamboo , resin , Kevlar , carbon fiber , aluminum , and plastic .
+Simplified sentence:
+Some decks have special materials that help to keep the deck from breaking. Such as fiberglass, bamboo, resin, Kevlar, carbon fiber, aluminum, and plastic. Some of them have special Materials that help keep the Deck from breaking: fiberglass, bamboo, resin, Kevlar, carbon fiber, aluminum.
+
+6
+Original sentence:
+`` Old school '' boards -LRB- those made in the 1970s â `` 80s or modern boards that mimic their shape -RRB- are generally wider and often have only one kicktail .
+Simplified sentence:
+simplify: `` Old school '' boards -LRB- those made in the 1970s â. `` 80s or modern boards that mimic their shape -RRB- are generally wider and often have only one kicktail. "Old school" boards were made in 1970s and 1980s. "Modern" boards made in 1990s and 2000s.
+
+7
+Original sentence:
+One of the first deck companies was called `` Drapped '' taken from Jonny 's second name .
+Simplified sentence:
+One of the first deck companies was called `` Drapped '' taken from Jonny's second name. The name was taken from the name of Jonny's father, who was also a deck player. The company went on to become one of the most successful deck companies of all time.
+
+8
+Original sentence:
+Grip tape , when applied to the top surface of a skateboard , gives a skater 's feet grip on the deck .
+Simplified sentence:
+Grip tape gives a skater's feet grip on the deck. When applied to the top surface of a skateboard, the tape gives the skater a grip. Grip tape can also be used on the bottom of the skateboard to give a better grip.
+
+9
+Original sentence:
+Modern decks vary in size , but most are 7 to 10.5 inches wide .
+Simplified sentence:
+Modern decks vary in size, but most are 7 to 10.5 inches wide. Modern decks are available in sizes 7-10.5 in the U.S. and 4-6 inches in the UK. They can also be ordered online for as little as $3.99.
+
+10
+Original sentence:
+Variants of the 1970s often have little or no concavity , whereas 1980s models have deeper concavities and steeper kicktails .
+Simplified sentence:
+simplify: Variants of the 1970s often have little or no concavity, whereas 1980s models have deeper concavities and steeper kicktails.simplified: Variant of the 70s often has little orNo concavITY, whereas 80s models. have deeper Concavities, steeper Kicktails.
+
+11
+Original sentence:
+The usual parts to design a complete skateboard are the deck , trucks , wheels , bearings , hardware , and griptape .
+Simplified sentence:
+The usual parts to design a complete skateboard are the deck, trucks, wheels, bearings, hardware, and griptape. The deck, trucks, wheels, bearings and hardware are the main parts of a skateboard. For more information on how to make your own skateboard, visit the official skateboard website.
+
+12
+Original sentence:
+This is mostly ridden down hills or by the beach to represent the riding of a wave in the ocean on a surfboard .
+Simplified sentence:
+simplify: This is mostly ridden down hills or by the beach to represent the riding of a wave in the ocean on a surfboard. It is most commonly used in the U.S. to represent a wave on a beach or in the water. It can also be used in other sports such as surfing.
+
+13
+Original sentence:
+It is most often black but can come in a variety of colors including clear , allowing the top of the deck to be decorated .
+Simplified sentence:
+It is most often black but can come in a variety of colors including clear, allowing the top of the deck to be decorated. It can be used as a table top or as a work of art. It is usually made of plastic and has a diameter of up to 10 inches.
+
+14
+Original sentence:
+The longboard , a common variant of the skateboard , has a longer deck .
+Simplified sentence:
+The longboard is a common variant of the skateboard. The longboard has a longer deck than a normal skateboard deck. It is a popular form of skateboard in the U.S. and around the world. It can also be called a longboard or a long board.
+
+15
+Original sentence:
+Wider decks can be used for greater stability when transition or ramp skating .
+Simplified sentence:
+simplify: Wider decks can be used for greater stability when transition or ramp skating. Wider boards can also be used to help with stability when skating on a ramp or in a tight space. For more information on skateboarding with a wider deck, visit skateboarding.com or go to skating.com.
+
+16
+Original sentence:
+Edmilson Alves -LRB- born February 17 , 1976 -RRB- , is a Brazilian midfielder who currently plays for Roasso Kumamoto in the J. League Division 2 .
+Simplified sentence:
+Edmilson Alves (born February 17, 1976) is a Brazilian footballer.He currently plays for Roasso Kumamoto in the J. League Division 2. Alves is a midfielder who can also play as a striker. He has played in the World Cup for Brazil in 2002 and 2006.
+
+17
+Original sentence:
+Les Oubeaux is a commune in the Calvados department in the Basse-Normandie region in northwestern France .
+Simplified sentence:
+Les Oubeaux is a commune in the Calvados department in the Basse-Normandie region in northwestern France. It is located in the north-west of the province of Côtes-d'Armor, in the region of the Dordogne.
+
+18
+Original sentence:
+It is part of the Mitsubishi keiretsu , formerly the biggest industrial group in Japan , and was formed in 1970 from the automotive division of Mitsubishi Heavy Industries .
+Simplified sentence:
+Mitsubishi keiretsu is one of the biggest industrial groups in Japan. It was formed in 1970 from the automotive division of Mitsubishi Heavy Industries. It is part of the Mitsubsubishi group, which is the biggest group in the country.
+
+19
+Original sentence:
+This template , like some other is a workaround for wikimarkup behaviors .
+Simplified sentence:
+simplify: This template, like some other is a workaround for wikimarkup behaviors. This template is not meant to be used as a replacement for a full-blown template. It is meant to provide a way for people to create their own template. For more information on how to use this template, see the wiki.
+
+20
+Original sentence:
+In 1998 , she became the second actress -LRB- after Liza Minnelli -RRB- to win a Golden Globe Award , an Academy Award and an Emmy Award in the same year .
+Simplified sentence:
+In 1998, she became the second actress -LRB- after Liza Minnelli -RRB- to win a Golden Globe Award, an Academy Award and an Emmy Award in the same year. She is the only actress to win an Oscar, Golden Globe, and Emmy in one year.
+
+21
+Original sentence:
+Penin is a commune in the Pas-de-Calais department in the Nord-Pas-de-Calais region of France .
+Simplified sentence:
+Pin is a commune in the Pas-de-Calais department in the Nord-Pas- de-Caliis region of France. It is located in the south of the department and in the north of the Nord region of the country. The town of Penin is located to the east of the town.
+
+22
+Original sentence:
+Cardiff has many cultural sites varying from the historical Cardiff Castle and out of town Castell Coch to the more modern Wales Millennium Centre and Cardiff Bay . Cardiff was a finalist in the European Capital of Culture 2008 .
+Simplified sentence:
+Cardiff was a finalist in the European Capital of Culture 2008. Cardiff has many cultural sites varying from the historical Cardiff Castle and out of town Castell Coch to the more modern Wales Millennium Centre and Cardiff Bay. Cardiff is home to the Welsh National Museum and the Cardiff Bay Museum.
+
+23
+Original sentence:
+Sporting venues in the city include the Millennium Stadium -LRB- the national stadium for the Wales national rugby union team and the Wales national football team -RRB- , SWALEC Stadium -LRB- the home of Glamorgan County Cricket Club -RRB- , Cardiff City Stadium -LRB- the home of Cardiff City football team and Cardiff Blues rugby union team -RRB- , Cardiff International Sports Stadium -LRB- the home of Cardiff Amateur Athletic Club -RRB- and Cardiff Arms Park -LRB- the home of Cardiff Rugby Club -RRB- .
+Simplified sentence:
+Sporting venues in the city include the Millennium Stadium -LRB- the national stadium for the Wales rugby union team and the Wales national football team. SWALEC Stadium is the home of Glamorgan County Cricket Club -RRB- and Cardiff Arms Park is home of Cardiff Rugby Club.
+
+24
+Original sentence:
+Annual events in Cardiff that have become regular appearances in Cardiff 's calendar include Sparks in the Park , The Great British Cheese Festival , Cardiff Mardi Gras , Cardiff Winter Wonderland and Cardiff Festival .
+Simplified sentence:
+Sparks in the Park, The Great British Cheese Festival, Cardiff Mardi Gras and Cardiff Winter Wonderland are just a few of Cardiff's annual events. Cardiff is home to one of the UK's biggest festivals, the Great British cheese festival. Cardiff also hosts the annual Winter Wonderland and Cardiff Festival events.
+
+25
+Original sentence:
+PuymÃ ras is a commune in the Vaucluse department in the Provence-Alpes-C Ã te d'Azur region in southeastern France .
+Simplified sentence:
+PuymÃ ras is a commune in the Vaucluse department in the Provence-Alpes-C Ã te d'Azur region in southeastern France. It is located in the south of the island of Corsica, on the coast of the Gulf of Guinea.
+
+26
+Original sentence:
+Gastines is a commune in the Mayenne department in north-western France .
+Simplified sentence:
+Gastines is a commune in the Mayenne department in north-western France. It is located in the north-west of the region of Mayenne and in the south-east of the department of Dauphiné in the Normandy region of north-east France.
+
+27
+Original sentence:
+The Haiti national football team represents Haiti in association football and is controlled by the FÃ dÃ ration HaÃ tienne de Football , the governing body for football in Haiti .
+Simplified sentence:
+The Haiti national football team represents Haiti in association football. The team is controlled by the FÃ dÃ ration HaÃ tienne de Football, the governing body for football in Haiti. Haiti's national team has won the World Cup and the 2010 African Cup of Nations.
+
+28
+Original sentence:
+The Chenab then joins the Indus at Mithankot , Pakistan .
+Simplified sentence:
+simplify: The Chenab then joins the Indus at Mithankot, Pakistan.simplified: The. Chenab is seen as a symbol of the beginning and end of the Hindu religion. The. Hindu religion is based on Zoroastrianism, and the Chenab was the first.
+
+29
+Original sentence:
+It then merges with the Sutlej River near Uch Sharif , Pakistan to form the Panjnad or the ` Five Rivers ' , the fifth being the Beas River which joins the Satluj near Ferozepur , India .
+Simplified sentence:
+The Beas River joins the Satluj near Ferozepur, India. It then merges with the Sutlej River near Uch Sharif, Pakistan to form the Panjnad or the ` Five Rivers'The Beas is the fifth river to join the Satuluj.
+
+30
+Original sentence:
+The Chenab River -LRB- , , , , , literally : ` Moon -LRB- Chan -RRB- Ú Ù River -LRB- aab -RRB- ' Ø cents Ø -RRB- is formed by the confluence of the Chandra and Bhaga rivers at Tandi located in the upper Himalayas in the Lahul and Spiti District of Himachal Pradesh , India .
+Simplified sentence:
+The Chenab River is formed by the confluence of the Chandra and Bhaga rivers at Tandi. It is located in the upper Himalayas in the Lahul and Spiti District of Himachal Pradesh, India. The Chenab is a tributary of the Ganges River.
+
+31
+Original sentence:
+Ø Ù 3\/4 Ù Ø Ø Û Ø Ù .
+Simplified sentence:
+simplify: Ø Ù 3\/4 �’ �' �‘ Ø  Ø Û Ø ‘ Ú’  “” ‘’ “’”  ‘ ‘” ””, ‘,’, “,” and ‘.’.”. ‘ ’ ’“, ’,  ,  ’  –‘, ”  –  ’; -”;”- ;’-’:”–”:’ –” –’– :‘ –“;“–“: ’ – ”: ‘ – ’; ’: “ –  : ”; ‚:  ; ‘–’ : ’–  –: ‚: ?’?”? .  .“-‘-‚”,.  ,“ –‘–:“.  “– ”, ‬”!”.,  ? “- ”? ’. ”.‚, ‚,‬: ‬’,. !’! ,. ” – “:‡”!,  +.”%. +.  ,.”+ +”+. %.’., -.’!,”%’%”%, % %,”&’%,’+’%.”}.’+.’%-’%; & #’',’,'’'’%:’&”%-”%;’ &’|’!'’!.’.-’# ',”#”",’";’",”  ’,"’+,’£’!",’$’$.’?!’?,’!!’}.”!"’!".’!"”,"”"’".”!.”!".”!",”!!”%:” &”+,”|”!’  ”!:’!”?!”?,”!?’!?”!).’!:”!!!’!!!”!),’Pol’ (#’), !,’ %’%),’@’_”%),”!/’?",’let’s’||’BN’()’″,‘!‘%,‘%-“",‘%3”),’€’,’$,”_’-,’!%,“%,‚!‚!, !.“%3″,%3A”, ’%3B’,,,‚%‚%,‼%,•!“&“+‚+“!,“#‚&‚+, ?!?“!?!?!?!??!?!!?!?!?!!!?!?, ”!?!!??!?!,?!?!!?!?!!,?!!!,?!???!??,?!?!!,!?!%3 ’!!‬!?!+‘?!!‼’!!’!/”!!!?!&!!,!!!!,!,?!!,!,!!!!!!!!!!!.!!?!!!!!,!!,!!!?!=!!!?!!+!! &!!|!!&!! +!!
+
+32
+Original sentence:
+It flows through the Jammu region of Jammu and Kashmir into the plains of the Punjab , forming the boundary between the Rechna and Jech interfluves -LRB- Doabs in Persian -RRB- .
+Simplified sentence:
+It flows through the Jammu region of Jammu and Kashmir into the plains of the Punjab. It forms the boundary between the Rechna and Jech interfluves -LRB- Doabs in Persian -RRB-. It is a tributary of the River Indus.
+
+33
+Original sentence:
+Ù and then by the Ravi River Ahmedpur Sial Ø Ø Ù
+Simplified sentence:
+simplify: �’ and then by the Ravi River Ahmedpur Sial Ø �‘ Ù.simplified: �' and then  by the Ravi River Ahmedpur Sial Ø �' �'
+
+34
+Original sentence:
+It is joined by the Jhelum River at Trimmu Ø Ø Û Ù
+Simplified sentence:
+simplify: It is joined by the Jhelum River at Trimmu Ø �' Û Ù. It is also known as the River of the Three Peaks. It was first discovered in the early 17th century and is now considered one of the world's oldest rivers.
+
+35
+Original sentence:
+The total length of the Chenab is approximately 960 kilometres .
+Simplified sentence:
+simplify: The total length of the Chenab is approximately 960 kilometres. It is the longest river system in the world. The Chenab River system is one of the longest rivers in North America. It runs through the town of Chenab, in the province of Quebec.
+
+36
+Original sentence:
+In its upper reaches it is also known as the ' .
+Simplified sentence:
+simplify: In its upper reaches it is also known as the '. In its lower reaches, it is called the'or the'in the local dialect. In the U.S. and Canada it is known as "The Great Lakes" or the "Great Lakes"
+
+37
+Original sentence:
+CondÃ - sur-Ifs is a commune in the Calvados department in the Basse-Normandie region in northwestern France .
+Simplified sentence:
+CondÃ - sur-Ifs is a commune in the Calvados department in the Basse-Normandie region in northwestern France. It is located in the valley of the River Calvado, which flows into the river of the same name. The commune has a population of around 1,000.
+
+38
+Original sentence:
+The main bar at King 's is far older , and is the site of more informal meetings between students .
+Simplified sentence:
+The main bar at King's is far older, and is the site of more informal meetings between students. The bar is also the place where students hold informal meetings and socialize. The main bar is located on the second floor of the college's student union building.
+
+39
+Original sentence:
+The bar has been traditionally painted a socialist red , including a depiction of a hammer and sickle .
+Simplified sentence:
+simplify: The bar has been traditionally painted a socialist red, including a depiction of a hammer and sickle. It is also known as the Red Bar because of the colour of its walls. The bar is located in the centre of the city, in the heart of central London.
+
+40
+Original sentence:
+King 's also has a dedicated Coffee Shop adjacent to the bar .
+Simplified sentence:
+King's also has a dedicated Coffee Shop adjacent to the bar. King's is located in the heart of New York's SoHo neighborhood. The bar is located on the ground floor of a building on the Upper East Side. King's is on the second floor of the building, across the street from Macy's.
+
+41
+Original sentence:
+Henry VI is not completely forgotten at the College , however , the Saturday after the end of Michaelmas term each year is Founder 's Day which begins with a Founder 's Eucharist in the chapel , followed by a Founder 's Breakfast with ale and culminating in a sumptuous dinner in his memory called `` Founder 's Feast '' to which all members of College in their last year of studies are invited .
+Simplified sentence:
+The Saturday after the end of Michaelmas term each year is Founder's Day. Henry VI is not completely forgotten at the College. All members of College in their last year of studies are invited to a sumptuous dinner in his memory to which all are invited.
+
+42
+Original sentence:
+The enduring popularity of the June Event is due largely to its affordability ; a ticket generally costs around Â # 60 rather than the Â # 90 â `` 200 which is common for the May Balls of other colleges .
+Simplified sentence:
+The June Event is due largely to its affordability. A ticket generally costs around Â # 60 rather than the Â  90 â `` 200 which is common for the May Balls of other colleges. The enduring popularity of the June event is due to the affordability of the ticket.
+
+43
+Original sentence:
+A Vacation Bar , or `` vac bar '' , also sometimes operates during the summer vacation , run by -LRB- and mainly for -RRB- the graduate students who remain in College throughout the year .
+Simplified sentence:
+A Vacation Bar is a bar run by graduate students during summer vacation. Vacation bars are run by -LRB- and mainly for graduate students who remain in College throughout the year. A Vacation bar also sometimes operates during the summer vacation of -RRB- the graduate students.
+
+44
+Original sentence:
+Founded in 1441 , the college 's formal name is `` The King 's College of Our Lady and St. Nicholas in Cambridge '' .
+Simplified sentence:
+The King's College of Our Lady and St. Nicholas in Cambridge was founded in 1441. The college's formal name is The King's College, Cambridge. It is one of the oldest colleges in the UK and was founded by the King in the reign of King Henry VIII.
+
+45
+Original sentence:
+Founded in 1441 , the college 's formal name is `` The King 's College of Our Lady and St. Nicholas in Cambridge '' . It is usually referred to simply as `` King 's '' within the university .
+Simplified sentence:
+The King's College of Our Lady and St. Nicholas is a college of Cambridge University. Founded in 1441, it is usually referred to as King's College within the university. The college is named after the King of England. It is one of the oldest colleges in the UK.
+
+46
+Original sentence:
+King 's has a venue known as the Cellar Bar , a small room in the basement of the college , which regularly acts as a music venue .
+Simplified sentence:
+King's has a venue known as the Cellar Bar. It is a small room in the basement of the college which regularly acts as a music venue. King's also has a bar in the back of the building known as The Cellar. The cellar is located in a basement room of King's College.
+
+47
+Original sentence:
+King 's College is a constituent college of the University of Cambridge , England .
+Simplified sentence:
+King's College is a constituent college of the University of Cambridge. King's is one of the oldest colleges in the UK. It was founded in 17th century by King Edward VII of England. King's College is now one of Britain's oldest colleges.
+
+48
+Original sentence:
+The student union has a long record of left wing activism .
+Simplified sentence:
+simplify: The student union has a long record of left wing activism. It has been accused of being too right-wing by some of its own members. The union has denied any wrongdoing and says it is a victim of a political witch hunt. It also says it has been victim of political witch hunts by the student government.
+

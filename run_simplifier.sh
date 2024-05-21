@@ -7,4 +7,4 @@ elif [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
     conda activate MedJarg
 fi
 
-python3  model/definition_simplifier.py
+python3  model/text_simplifier.py

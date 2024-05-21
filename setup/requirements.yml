@@ -11,11 +11,10 @@ dependencies:
   - scikit-learn
   - pyyaml  
   - matplotlib
+  - sentencepiece
   - pytorch=1.12.1  # Add PyTorch to ensure compatibility with the transformers library
+  - cudatoolkit=11.1  # Ensure compatibility with the installed PyTorch version
   - transformers=4.17.0  # This will attempt to get the latest version available on conda channels
   - pip
   - pip:
     - tensorflow-hub
-    - charset-normalizer
-    - rouge_score
-    - aiohttp

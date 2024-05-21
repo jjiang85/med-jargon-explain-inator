@@ -1,0 +1,294 @@
+0
+Original sentence:
+It is the county seat of Alfalfa County .
+Simplified sentence:
+It is the county seat of Alfalfa County.
+
+1
+Original sentence:
+Cherokee is a city in Alfalfa County , Oklahoma , United States .
+Simplified sentence:
+Cherokee is a city in Oklahoma, United States.
+
+2
+Original sentence:
+Skateboard decks are usually between 28 and 33 inches long .
+Simplified sentence:
+Skateboard decks are usually between 28 and 33 inches long.
+
+3
+Original sentence:
+The underside of the deck can be printed with a design by the manufacturer , blank , or decorated by any other means .
+Simplified sentence:
+The underside of the deck can be printed with a design by the manufacturer, blank, or decorated by any other means.
+
+4
+Original sentence:
+This was created by two surfers ; Ben Whatson and Jonny Drapper .
+Simplified sentence:
+This was created by two surfers ; Ben Whatson and Jonny Drapper.
+
+5
+Original sentence:
+Some of them have special materials that help to keep the deck from breaking : such as fiberglass , bamboo , resin , Kevlar , carbon fiber , aluminum , and plastic .
+Simplified sentence:
+Some of them have special materials that help to keep the deck from breaking : such as fiberglass, bamboo, resin, Kevlar, carbon fiber, aluminum, and plastic.
+
+6
+Original sentence:
+`` Old school '' boards -LRB- those made in the 1970s â `` 80s or modern boards that mimic their shape -RRB- are generally wider and often have only one kicktail .
+Simplified sentence:
+Old school '' boards-LRB- those made in the 1970s â  80s or modern boards that mimic their shape -RRB- are generally wider and often have only one kicktail.
+
+7
+Original sentence:
+One of the first deck companies was called `` Drapped '' taken from Jonny 's second name .
+Simplified sentence:
+Drapped '' was one of the first deck companies.
+
+8
+Original sentence:
+Grip tape , when applied to the top surface of a skateboard , gives a skater 's feet grip on the deck .
+Simplified sentence:
+Grip tape, when applied to the top surface of a skateboard gives a skater's feet grip on the deck.
+
+9
+Original sentence:
+Modern decks vary in size , but most are 7 to 10.5 inches wide .
+Simplified sentence:
+Modern decks vary in size, but most are 7 to 10.5 inches wide.
+
+10
+Original sentence:
+Variants of the 1970s often have little or no concavity , whereas 1980s models have deeper concavities and steeper kicktails .
+Simplified sentence:
+1980s models have deeper concavities and steeper kicktails.
+
+11
+Original sentence:
+The usual parts to design a complete skateboard are the deck , trucks , wheels , bearings , hardware , and griptape .
+Simplified sentence:
+the deck, trucks, wheels, bearings, hardware, and griptape.
+
+12
+Original sentence:
+This is mostly ridden down hills or by the beach to represent the riding of a wave in the ocean on a surfboard .
+Simplified sentence:
+this is ridden down hills or by the beach to represent the riding of a wave in the ocean on a surfboard.
+
+13
+Original sentence:
+It is most often black but can come in a variety of colors including clear , allowing the top of the deck to be decorated .
+Simplified sentence:
+It is most often black but can come in a variety of colors including clear, allowing the deck to be decorated.
+
+14
+Original sentence:
+The longboard , a common variant of the skateboard , has a longer deck .
+Simplified sentence:
+The longboard, a common variant of the skateboard, has a longer deck.
+
+15
+Original sentence:
+Wider decks can be used for greater stability when transition or ramp skating .
+Simplified sentence:
+Wider decks can be used for greater stability when transition or ramp skating.
+
+16
+Original sentence:
+Edmilson Alves -LRB- born February 17 , 1976 -RRB- , is a Brazilian midfielder who currently plays for Roasso Kumamoto in the J. League Division 2 .
+Simplified sentence:
+Edmilson Alves -LRB- born February 17, 1976 -RRB-, is a Brazilian midfielder who currently plays for Roasso Kumamoto in the J. League Division 2.
+
+17
+Original sentence:
+Les Oubeaux is a commune in the Calvados department in the Basse-Normandie region in northwestern France .
+Simplified sentence:
+Les Oubeaux is a commune in the Calvados department in the Basse-Normandie region in northwestern France.
+
+18
+Original sentence:
+It is part of the Mitsubishi keiretsu , formerly the biggest industrial group in Japan , and was formed in 1970 from the automotive division of Mitsubishi Heavy Industries .
+Simplified sentence:
+Mitsubishi keiretsu, formerly the biggest industrial group in Japan, was formed in 1970 from the automotive division of Mitsubishi Heavy Industries.
+
+19
+Original sentence:
+This template , like some other is a workaround for wikimarkup behaviors .
+Simplified sentence:
+This template, like some other is a workaround for wikimarkup behaviors.
+
+20
+Original sentence:
+In 1998 , she became the second actress -LRB- after Liza Minnelli -RRB- to win a Golden Globe Award , an Academy Award and an Emmy Award in the same year .
+Simplified sentence:
+-LRB- after Liza Minnelli -RRB- to win a Golden Globe Award, an Academy Award and an Emmy Award in the same year.
+
+21
+Original sentence:
+Penin is a commune in the Pas-de-Calais department in the Nord-Pas-de-Calais region of France .
+Simplified sentence:
+Penin is a commune in the Pas-de-Calais department in the Nord-Pas-de-Calais region of France.
+
+22
+Original sentence:
+Cardiff has many cultural sites varying from the historical Cardiff Castle and out of town Castell Coch to the more modern Wales Millennium Centre and Cardiff Bay . Cardiff was a finalist in the European Capital of Culture 2008 .
+Simplified sentence:
+Cardiff has many cultural sites ranging from the historic Cardiff Castle and out of town Castell Coch to the more modern Wales Millennium Centre and Cardiff Bay. Cardiff was a finalist in the European Capital of Culture 2008.
+
+23
+Original sentence:
+Sporting venues in the city include the Millennium Stadium -LRB- the national stadium for the Wales national rugby union team and the Wales national football team -RRB- , SWALEC Stadium -LRB- the home of Glamorgan County Cricket Club -RRB- , Cardiff City Stadium -LRB- the home of Cardiff City football team and Cardiff Blues rugby union team -RRB- , Cardiff International Sports Stadium -LRB- the home of Cardiff Amateur Athletic Club -RRB- and Cardiff Arms Park -LRB- the home of Cardiff Rugby Club -RRB- .
+Simplified sentence:
+Cardiff City Stadium -LRB- the home of Cardiff City football team and Cardiff Blues rugby union team -RRB-, Cardiff International Sports Stadium -LRB- the home of Cardiff Amateur Athletic Club -RRB-.
+
+24
+Original sentence:
+Annual events in Cardiff that have become regular appearances in Cardiff 's calendar include Sparks in the Park , The Great British Cheese Festival , Cardiff Mardi Gras , Cardiff Winter Wonderland and Cardiff Festival .
+Simplified sentence:
+Cardiff's calendar includes Sparks in the Park, The Great British Cheese Festival, Cardiff Mardi Gras, Cardiff Winter Wonderland and Cardiff Festival.
+
+25
+Original sentence:
+PuymÃ ras is a commune in the Vaucluse department in the Provence-Alpes-C Ã te d'Azur region in southeastern France .
+Simplified sentence:
+Puym ras is a commune in the Provence-Alpes-C  te d'Azur region in southeastern France.
+
+26
+Original sentence:
+Gastines is a commune in the Mayenne department in north-western France .
+Simplified sentence:
+Gastines is a commune in the Mayenne department in north-western France.
+
+27
+Original sentence:
+The Haiti national football team represents Haiti in association football and is controlled by the FÃ dÃ ration HaÃ tienne de Football , the governing body for football in Haiti .
+Simplified sentence:
+To simplify: The Haiti national football team represents Haiti in association football and is controlled by the F d ration Ha tienne de Football, the governing body for football in Haiti.
+
+28
+Original sentence:
+The Chenab then joins the Indus at Mithankot , Pakistan .
+Simplified sentence:
+Chenab joins the Indus at Mithankot, Pakistan.
+
+29
+Original sentence:
+It then merges with the Sutlej River near Uch Sharif , Pakistan to form the Panjnad or the ` Five Rivers ' , the fifth being the Beas River which joins the Satluj near Ferozepur , India .
+Simplified sentence:
+the  Five Rivers ', or the  Five Rivers ', merges with the Sutlej River near Uch Sharif, Pakistan to form the Panjnad.
+
+30
+Original sentence:
+The Chenab River -LRB- , , , , , literally : ` Moon -LRB- Chan -RRB- Ú Ù River -LRB- aab -RRB- ' Ø cents Ø -RRB- is formed by the confluence of the Chandra and Bhaga rivers at Tandi located in the upper Himalayas in the Lahul and Spiti District of Himachal Pradesh , India .
+Simplified sentence:
+Moon -LRB- Chan -RRB- aab -RRB-   River -LRB- aab -RRB-  cents  -RRB- is formed by the confluence of the Chandra and Bhaga rivers at Tandi located in the upper Himalayas.
+
+31
+Original sentence:
+Ø Ù 3\/4 Ù Ø Ø Û Ø Ù .
+Simplified sentence:
+.
+
+32
+Original sentence:
+It flows through the Jammu region of Jammu and Kashmir into the plains of the Punjab , forming the boundary between the Rechna and Jech interfluves -LRB- Doabs in Persian -RRB- .
+Simplified sentence:
+-LRB- Doabs in Persian -RRB-.
+
+33
+Original sentence:
+Ù and then by the Ravi River Ahmedpur Sial Ø Ø Ù
+Simplified sentence:
+
+
+34
+Original sentence:
+It is joined by the Jhelum River at Trimmu Ø Ø Û Ù
+Simplified sentence:
+.
+
+35
+Original sentence:
+The total length of the Chenab is approximately 960 kilometres .
+Simplified sentence:
+Chenab is a 960 kilometre long river.
+
+36
+Original sentence:
+In its upper reaches it is also known as the ' .
+Simplified sentence:
+In its upper reaches it is also known as the '.
+
+37
+Original sentence:
+CondÃ - sur-Ifs is a commune in the Calvados department in the Basse-Normandie region in northwestern France .
+Simplified sentence:
+Cond - sur-Ifs is a commune in the Basse-Normandie region in northwestern France.
+
+38
+Original sentence:
+The main bar at King 's is far older , and is the site of more informal meetings between students .
+Simplified sentence:
+the main bar at King's is far older, and is the site of more informal meetings between students.
+
+39
+Original sentence:
+The bar has been traditionally painted a socialist red , including a depiction of a hammer and sickle .
+Simplified sentence:
+The bar has been traditionally painted a socialist red, including a hammer and sickle.
+
+40
+Original sentence:
+King 's also has a dedicated Coffee Shop adjacent to the bar .
+Simplified sentence:
+King's also has a dedicated Coffee Shop adjacent to the bar.
+
+41
+Original sentence:
+Henry VI is not completely forgotten at the College , however , the Saturday after the end of Michaelmas term each year is Founder 's Day which begins with a Founder 's Eucharist in the chapel , followed by a Founder 's Breakfast with ale and culminating in a sumptuous dinner in his memory called `` Founder 's Feast '' to which all members of College in their last year of studies are invited .
+Simplified sentence:
+the Saturday after the end of Michaelmas term each year is Founder's Day which begins with a Founder's Eucharist in the chapel. followed by a Founder's Breakfast with ale and culminating in a sumptuous dinner in his memory called  Founder's Feast ''.
+
+42
+Original sentence:
+The enduring popularity of the June Event is due largely to its affordability ; a ticket generally costs around Â # 60 rather than the Â # 90 â `` 200 which is common for the May Balls of other colleges .
+Simplified sentence:
+# 60 â  200 is common for the May Balls of other colleges.
+
+43
+Original sentence:
+A Vacation Bar , or `` vac bar '' , also sometimes operates during the summer vacation , run by -LRB- and mainly for -RRB- the graduate students who remain in College throughout the year .
+Simplified sentence:
+A Vacation Bar, or  vac bar '', also sometimes operates during the summer vacation, run by -LRB- and mostly for -RRB- the graduate students who remain in College throughout the year.
+
+44
+Original sentence:
+Founded in 1441 , the college 's formal name is `` The King 's College of Our Lady and St. Nicholas in Cambridge '' .
+Simplified sentence:
+the college's formal name is  The King's College of Our Lady and St. Nicholas in Cambridge ''.
+
+45
+Original sentence:
+Founded in 1441 , the college 's formal name is `` The King 's College of Our Lady and St. Nicholas in Cambridge '' . It is usually referred to simply as `` King 's '' within the university .
+Simplified sentence:
+the college's formal name is  The King's College of Our Lady and St. Nicholas in Cambridge ''.
+
+46
+Original sentence:
+King 's has a venue known as the Cellar Bar , a small room in the basement of the college , which regularly acts as a music venue .
+Simplified sentence:
+the Cellar Bar, a small room in the basement of the college, regularly acts as a music venue.
+
+47
+Original sentence:
+King 's College is a constituent college of the University of Cambridge , England .
+Simplified sentence:
+King's College is a constituent college of the University of Cambridge, England.
+
+48
+Original sentence:
+The student union has a long record of left wing activism .
+Simplified sentence:
+The student union has a long history of left wing activism.
+
