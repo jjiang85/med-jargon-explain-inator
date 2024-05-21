@@ -7,7 +7,22 @@ from nltk.tokenize import word_tokenize
 import re
 import csv
 
-def csv_loader(filepath):
+def csv_loader(filepath: str):
+    """
+    Load a CSV file into a gold standard and input dictionary for use in the text simplifier model
+
+    Arguments:
+    filepath
+        The string path indicating where the .csv file is stored
+
+    Returns:
+    ref_dict
+        A dictionary with row ids as keys and the gold standard simplified sentences as values.
+        To be used as the gold standard for evaluation of model performance
+    input_dict
+        A dictionary with row ids as keys and the original length sentences as values. To be
+        used as input for the text simplification model
+    """
     
     with open(filepath, newline='') as f:
         reader = csv.reader(f)
