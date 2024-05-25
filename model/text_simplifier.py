@@ -44,6 +44,32 @@ def csv_loader(filepath: str):
 
 
 class TextSimplifier:
+    """
+    A class used to simplify sentences with three options for pre-trained models and tokenizers
+
+    Attributes:
+    ----------
+    model_type : str
+        Specifies the pre-trained model that is used for simplification 
+        The supported models are 'T5', 'Pegasus', and 'BART'.
+
+    Methods:
+    -------
+    setup_model():
+        Initializes the appropriate model and tokenizer based on the specified model_type.
+        
+    clean_definition(sentence: str) -> str:
+        Cleans the model output by removing any artifacts from the 'simplify:' prompt.
+
+    simplify_sentence(sentence: str) -> str:
+        Simplifies the input sentence using the initialized model and tokenizer.
+
+    simplify_sentences(sentences: dict, write_output: bool, output_file: str = None) -> Optional[dict]:
+        Simplifies a dictionary of sentences and optionally writes the output to a file.
+        
+    evaluate(gold_std: dict, write_output: bool, output_file: str = None) -> dict:
+        Evaluates the simplified sentences against a gold standard using ROUGE and METEOR metrics and optionally writes the results to a file.
+    """
 
     def __init__(self, model_type):
         
@@ -248,8 +274,8 @@ if __name__ == '__main__':
     # Specify the model name as either 'T5', 'Pegasus', or 'BART'
     model = 'BART'
     # Name files accordingly for output
-    definitions_path = model + '_sentences.txt'
-    evaluations_path = model + '_evaluations.txt'
+    definitions_path = 'outputs/sentences' + model + '_sentences.txt'
+    evaluations_path = 'outputs/evaluations' + model + '_evaluations.txt'
 
     # Example usage of simplifying sentences
     definitions = {"adhesion": "A band of scar tissue that joins normally separated internal body structures, most often after surgery, inflammation, or injury in the area.",
