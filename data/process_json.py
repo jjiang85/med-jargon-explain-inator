@@ -23,9 +23,10 @@ def main():
 	new_terms_cui={}
 	terms_removed=0
 	term_count=0
+	keys_to_remove=["+", ">", "\\", "kit kit", "(", "&", "_", ":", "/", "mouse"]
 	
 	for k in terms_cui.keys():
-		if ("+" in k) or (">" in k) or ("\\" in k) or ("kit kit" in k) or ("(" in k) or ("&" in k) or ("_" in k) or (":" in k) or ("/" in k) or ("mouse" in k):
+		if any(sub in k for sub in keys_to_remove):
 			 terms_removed +=1
 		else:
 			new_terms_cui[k]=terms_cui[k]
