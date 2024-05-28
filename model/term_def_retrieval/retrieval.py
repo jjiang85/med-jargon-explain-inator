@@ -1,18 +1,20 @@
 import json
 import os
+from os.path import basename, dirname, join
 
-"""
-Notes for me:
-- Load JSON with each call
-- Each call retrieves a single term or definition
-- Function takes a str
-"""
+# SET GLOBAL VARIABLES: -----------------------------------
+# find root of repo:
+dir = os.getcwd()
+while basename(dir) != "med-jargon-explain-inator":
+    dir = dirname(dirname(dir))
 
+# get absolute paths to the data files:
+# NOTE: assumes that the data file structure will not change.
+term_to_cui_file = join(dir, "data/term_to_cui.json")
+cui_to_def_file = join (dir, "data/cui_to_def.json")
+# ---------------------------------------------------------
 
-
-
-def get_definition(sample: str, term_to_cui_file: str = "../../data/term_to_cui.json", 
-                   cui_to_def_file: str = "../../data/cui_to_def.json") -> dict:
+def get_definition(sample: str) -> dict:
     """
     Retrieves potential definitions for a given term or phrase.
 

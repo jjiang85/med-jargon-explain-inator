@@ -13,6 +13,4 @@ def explain(term: str):
 
 @app.get("/define/{term}")
 def define(term: str):
-    term_file = "data/term_to_cui.json"
-    def_file = "data/cui_to_def.json"
-    return controller.define(term, term_file, def_file)
+    return controller.define(term)
