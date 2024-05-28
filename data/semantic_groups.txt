@@ -1,0 +1,31 @@
+Tissue
+Body Location or Region
+Sign or Symptom
+Body Part, Organ, or Organ Component
+Disease or Syndrome
+Congenital Abnormality
+Anatomical Abnormality
+Injury or Poisoning
+Pathologic Function
+Medical Device
+Laboratory or Test Result
+Organ or Tissue Function
+Physiologic Function
+Acquired Abnormality
+Body Space or Junction
+Clinical Drug 
+Anatomical Structure
+Cell or Molecular Dysfunction
+Biologic Function
+Health Care Activity
+Body Substance
+Antibiotic
+Functional Concept
+Embryonic Structure
+Therapeutic or Preventive Procedure
+Diagnostic Procedure
+Virus
+Laboratory Procedure
+Mental or Behavioral Dysfunction
+Experimental Model of Disease
+Body System

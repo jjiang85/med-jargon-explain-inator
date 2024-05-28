@@ -10,3 +10,7 @@ def read_root():
 @app.get("/explain/{term}")
 def explain(term: str):
     return controller.explain(term)
+
+@app.get("/define/{term}")
+def define(term: str):
+    return controller.define(term)
