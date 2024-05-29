@@ -1,0 +1,294 @@
+0
+Original sentence:
+It is the county seat of Alfalfa County .
+Simplified sentence:
+Alfalfa is a small town in northern Arkansas, USA.
+
+1
+Original sentence:
+Cherokee is a city in Alfalfa County , Oklahoma , United States .
+Simplified sentence:
+Cherokee is a city in Alfalfa County, Oklahoma.
+
+2
+Original sentence:
+Skateboard decks are usually between 28 and 33 inches long .
+Simplified sentence:
+A skateboarding deck is a piece of equipment used by skateboarders to move around on the ground.
+
+3
+Original sentence:
+The underside of the deck can be printed with a design by the manufacturer , blank , or decorated by any other means .
+Simplified sentence:
+The deck of the boat can be decorated with any number of different designs.
+
+4
+Original sentence:
+This was created by two surfers ; Ben Whatson and Jonny Drapper .
+Simplified sentence:
+Surfers in Australia have been taking part in a competition to find the world's most simple wave.
+
+5
+Original sentence:
+Some of them have special materials that help to keep the deck from breaking : such as fiberglass , bamboo , resin , Kevlar , carbon fiber , aluminum , and plastic .
+Simplified sentence:
+All images are copyrighted.
+
+6
+Original sentence:
+`` Old school '' boards -LRB- those made in the 1970s â `` 80s or modern boards that mimic their shape -RRB- are generally wider and often have only one kicktail .
+Simplified sentence:
+All images are copyrighted.
+
+7
+Original sentence:
+One of the first deck companies was called `` Drapped '' taken from Jonny 's second name .
+Simplified sentence:
+read full article
+
+8
+Original sentence:
+Grip tape , when applied to the top surface of a skateboard , gives a skater 's feet grip on the deck .
+Simplified sentence:
+Skateboarders have been using tape to give their feet a grip on the deck for years, but now it's being used to give their feet a grip on the board.
+
+9
+Original sentence:
+Modern decks vary in size , but most are 7 to 10.5 inches wide .
+Simplified sentence:
+All images are copyrighted.
+
+10
+Original sentence:
+Variants of the 1970s often have little or no concavity , whereas 1980s models have deeper concavities and steeper kicktails .
+Simplified sentence:
+The 1970s and 1980s were the most popular decades for car racing in the UK.
+
+11
+Original sentence:
+The usual parts to design a complete skateboard are the deck , trucks , wheels , bearings , hardware , and griptape .
+Simplified sentence:
+How do you build a complete skateboard?
+
+12
+Original sentence:
+This is mostly ridden down hills or by the beach to represent the riding of a wave in the ocean on a surfboard .
+Simplified sentence:
+The word surfboard comes from the Latin surfboard, meaning "to ride a wave".
+
+13
+Original sentence:
+It is most often black but can come in a variety of colors including clear , allowing the top of the deck to be decorated .
+Simplified sentence:
+The deck of a boat is usually made out of wood, but can also be made out of plastic.
+
+14
+Original sentence:
+The longboard , a common variant of the skateboard , has a longer deck .
+Simplified sentence:
+The longboard is a common variant of the skateboard and has a longer deck
+
+15
+Original sentence:
+Wider decks can be used for greater stability when transition or ramp skating .
+Simplified sentence:
+Wider decks can be used for transition and ramp skating.
+
+16
+Original sentence:
+Edmilson Alves -LRB- born February 17 , 1976 -RRB- , is a Brazilian midfielder who currently plays for Roasso Kumamoto in the J. League Division 2 .
+Simplified sentence:
+Edmilson Alves -LRB- born February 17, 1976 -RRB-, is a Brazilian midfielder who currently plays for Roasso Kumamoto in the J. League
+
+17
+Original sentence:
+Les Oubeaux is a commune in the Calvados department in the Basse-Normandie region in northwestern France .
+Simplified sentence:
+The French town of Les Oubeaux has become the first in the world to have its name changed.
+
+18
+Original sentence:
+It is part of the Mitsubishi keiretsu , formerly the biggest industrial group in Japan , and was formed in 1970 from the automotive division of Mitsubishi Heavy Industries .
+Simplified sentence:
+Mitsubishi Motors is one of the world's biggest car manufacturers.
+
+19
+Original sentence:
+This template , like some other is a workaround for wikimarkup behaviors .
+Simplified sentence:
+This template is a workaround for the following:
+
+20
+Original sentence:
+In 1998 , she became the second actress -LRB- after Liza Minnelli -RRB- to win a Golden Globe Award , an Academy Award and an Emmy Award in the same year .
+Simplified sentence:
+US actress, singer and dancer Debbie Reynolds has died at the age of 82.
+
+21
+Original sentence:
+Penin is a commune in the Pas-de-Calais department in the Nord-Pas-de-Calais region of France .
+Simplified sentence:
+Penin is a commune in the Pas-de-Calais department in the Nord-Pas-de-Calais region of France.
+
+22
+Original sentence:
+Cardiff has many cultural sites varying from the historical Cardiff Castle and out of town Castell Coch to the more modern Wales Millennium Centre and Cardiff Bay . Cardiff was a finalist in the European Capital of Culture 2008 .
+Simplified sentence:
+Cardiff is the capital of Wales and the largest city in south east Wales.
+
+23
+Original sentence:
+Sporting venues in the city include the Millennium Stadium -LRB- the national stadium for the Wales national rugby union team and the Wales national football team -RRB- , SWALEC Stadium -LRB- the home of Glamorgan County Cricket Club -RRB- , Cardiff City Stadium -LRB- the home of Cardiff City football team and Cardiff Blues rugby union team -RRB- , Cardiff International Sports Stadium -LRB- the home of Cardiff Amateur Athletic Club -RRB- and Cardiff Arms Park -LRB- the home of Cardiff Rugby Club -RRB- .
+Simplified sentence:
+Cardiff is home to a number of major sporting venues.
+
+24
+Original sentence:
+Annual events in Cardiff that have become regular appearances in Cardiff 's calendar include Sparks in the Park , The Great British Cheese Festival , Cardiff Mardi Gras , Cardiff Winter Wonderland and Cardiff Festival .
+Simplified sentence:
+BBC Wales takes a look at some of the events that have become regular appearances in Cardiff's calendar.
+
+25
+Original sentence:
+PuymÃ ras is a commune in the Vaucluse department in the Provence-Alpes-C Ã te d'Azur region in southeastern France .
+Simplified sentence:
+Puym ras is a commune in the Vaucluse department in the Provence-Alpes-C  te d'Azur region in southeastern France
+
+26
+Original sentence:
+Gastines is a commune in the Mayenne department in north-western France .
+Simplified sentence:
+The French town of Gastines has been described by the BBC as "one of the most beautiful places in the world".
+
+27
+Original sentence:
+The Haiti national football team represents Haiti in association football and is controlled by the FÃ dÃ ration HaÃ tienne de Football , the governing body for football in Haiti .
+Simplified sentence:
+The Haiti national football team represents Haiti in association football and is controlled by the F d' ration Ha tienne de Football
+
+28
+Original sentence:
+The Chenab then joins the Indus at Mithankot , Pakistan .
+Simplified sentence:
+The Chenab River begins its journey from China to Pakistan through the Karakoram mountains.
+
+29
+Original sentence:
+It then merges with the Sutlej River near Uch Sharif , Pakistan to form the Panjnad or the ` Five Rivers ' , the fifth being the Beas River which joins the Satluj near Ferozepur , India .
+Simplified sentence:
+The Satluj is the longest river in India and forms the boundary between India and Pakistan.
+
+30
+Original sentence:
+The Chenab River -LRB- , , , , , literally : ` Moon -LRB- Chan -RRB- Ú Ù River -LRB- aab -RRB- ' Ø cents Ø -RRB- is formed by the confluence of the Chandra and Bhaga rivers at Tandi located in the upper Himalayas in the Lahul and Spiti District of Himachal Pradesh , India .
+Simplified sentence:
+The Chenab River is one of the most important rivers in India.
+
+31
+Original sentence:
+Ø Ù 3\/4 Ù Ø Ø Û Ø Ù .
+Simplified sentence:
+
+
+32
+Original sentence:
+It flows through the Jammu region of Jammu and Kashmir into the plains of the Punjab , forming the boundary between the Rechna and Jech interfluves -LRB- Doabs in Persian -RRB- .
+Simplified sentence:
+The River Jhelum is one of the longest rivers in the world.
+
+33
+Original sentence:
+Ù and then by the Ravi River Ahmedpur Sial Ø Ø Ù
+Simplified sentence:
+
+
+34
+Original sentence:
+It is joined by the Jhelum River at Trimmu Ø Ø Û Ù
+Simplified sentence:
+The River Jhelum is one of the longest rivers in the world, reaching a height of more than 200m (656ft).
+
+35
+Original sentence:
+The total length of the Chenab is approximately 960 kilometres .
+Simplified sentence:
+The Chenab River is one of the longest rivers in the world.
+
+36
+Original sentence:
+In its upper reaches it is also known as the ' .
+Simplified sentence:
+It is the largest mountain in the Alps and is the highest point on Earth.
+
+37
+Original sentence:
+CondÃ - sur-Ifs is a commune in the Calvados department in the Basse-Normandie region in northwestern France .
+Simplified sentence:
+Cond - sur-Ifs is a commune in the Calvados department in the Basse-Normandie region in France.
+
+38
+Original sentence:
+The main bar at King 's is far older , and is the site of more informal meetings between students .
+Simplified sentence:
+King's College London is the largest university in the City of London.
+
+39
+Original sentence:
+The bar has been traditionally painted a socialist red , including a depiction of a hammer and sickle .
+Simplified sentence:
+The red bar on the roof of a building in the centre of London has been a landmark of the British capital for more than 100 years.
+
+40
+Original sentence:
+King 's also has a dedicated Coffee Shop adjacent to the bar .
+Simplified sentence:
+King's Bar and Grill is a family-run pub and restaurant in the centre of Glasgow.
+
+41
+Original sentence:
+Henry VI is not completely forgotten at the College , however , the Saturday after the end of Michaelmas term each year is Founder 's Day which begins with a Founder 's Eucharist in the chapel , followed by a Founder 's Breakfast with ale and culminating in a sumptuous dinner in his memory called `` Founder 's Feast '' to which all members of College in their last year of studies are invited .
+Simplified sentence:
+The College of St Andrews was founded by Henry VI in 1545 and is one of the oldest independent schools in the UK.
+
+42
+Original sentence:
+The enduring popularity of the June Event is due largely to its affordability ; a ticket generally costs around Â # 60 rather than the Â # 90 â `` 200 which is common for the May Balls of other colleges .
+Simplified sentence:
+The May Ball is one of the biggest events in the Irish student calendar, taking place on the last Friday in June.
+
+43
+Original sentence:
+A Vacation Bar , or `` vac bar '' , also sometimes operates during the summer vacation , run by -LRB- and mainly for -RRB- the graduate students who remain in College throughout the year .
+Simplified sentence:
+The -RRB- is a bar and restaurant run by -RRB- the graduate students who remain in College throughout the year.
+
+44
+Original sentence:
+Founded in 1441 , the college 's formal name is `` The King 's College of Our Lady and St. Nicholas in Cambridge '' .
+Simplified sentence:
+The University of Cambridge is one of the oldest universities in the UK.
+
+45
+Original sentence:
+Founded in 1441 , the college 's formal name is `` The King 's College of Our Lady and St. Nicholas in Cambridge '' . It is usually referred to simply as `` King 's '' within the university .
+Simplified sentence:
+The King's College is one of the oldest universities in the UK.
+
+46
+Original sentence:
+King 's has a venue known as the Cellar Bar , a small room in the basement of the college , which regularly acts as a music venue .
+Simplified sentence:
+King's College London is one of the most prestigious universities in the UK.
+
+47
+Original sentence:
+King 's College is a constituent college of the University of Cambridge , England .
+Simplified sentence:
+King's College is a constituent college of the University of Cambridge.
+
+48
+Original sentence:
+The student union has a long record of left wing activism .
+Simplified sentence:
+The University and College Union (UCU) has been at the centre of a number of high-profile controversies in recent years.
+
