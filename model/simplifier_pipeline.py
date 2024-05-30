@@ -4,6 +4,11 @@ import json
 
 
 class SimplifierPipeline:
+    """
+    Class that loads medical jargon terms and their definitions from json files, scores each
+    definition to get a reading difficulty score, and then simplifies definitions whose scores
+    are higher than the cutoff score.
+    """
 	
     def __init__(self, term2cui, cui2def, reading_diff, model, new_cui2def_path):
         """
@@ -106,8 +111,6 @@ class SimplifierPipeline:
                 self.termdict[term][database] = simple_definition
             
         
-
-
     def convert_to_json(self):
         """
         Converts termdict content into a new cui_to_def file including the simplified sentences.
