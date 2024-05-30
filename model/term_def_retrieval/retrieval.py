@@ -3,15 +3,15 @@ import os
 from os.path import basename, dirname, join
 
 # SET GLOBAL VARIABLES: -----------------------------------
-# find root of repo:
+# find app root:
 dir = os.getcwd()
 while basename(dir) != "med-jargon-explain-inator":
     dir = dirname(dirname(dir))
 
 # get absolute paths to the data files:
 # NOTE: assumes that the data file structure will not change.
-term_to_cui_file = join(dir, "data/term_to_cui.json")
-cui_to_def_file = join (dir, "data/cui_to_def.json")
+term_to_cui_file = join(dir, "data/term_to_cui_final.json")
+cui_to_def_file = join (dir, "data/cui_to_def_final.json")
 # ---------------------------------------------------------
 
 def get_definition(sample: str) -> dict:
